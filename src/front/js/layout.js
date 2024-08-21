@@ -10,7 +10,6 @@ import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
 import { Single2 } from "./pages/single2";
-// import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -34,8 +33,8 @@ const Layout = () => {
                 <ScrollToTop>
                     <Navbar />
                     <Routes>
-                        {/* <Route element={<Home />} path="/" /> */}
-                        <Route path="/home" element={<Home />} />
+                        
+                        <Route path="/" element={<Home />} />
                         <Route element={<Login />} path="/login" />
                         <Route element={<Protected />} path="/protected" />
                         <Route path="/protected" element={<Protected />} />

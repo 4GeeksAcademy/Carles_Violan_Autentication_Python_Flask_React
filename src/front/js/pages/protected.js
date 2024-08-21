@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
+import "../../styles/home.css";
 
 export const Protected = () => {
   const { store, actions } = useContext(Context);
@@ -61,10 +62,10 @@ export const Protected = () => {
           ))}
         </ul>
       </div>
-      <Link to="/home">
-        <button className="btn btn-warning" onClick={() => actions.logout()}>
-          Logout
-        </button>
+      <Link to="/">
+        {/* <button className="btn btn-warning" onClick={() => actions.logout()}>
+          Logout list-style-type: none;
+        </button> */}
       </Link>
     </div>
   );
